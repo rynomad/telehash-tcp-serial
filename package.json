@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "crc": "^3.4.0",
-    "lob-enc": "0.0.17"
+    "lob-enc": "0.0.17",
+    "serialport": "^2.0.6"
   }
 }
