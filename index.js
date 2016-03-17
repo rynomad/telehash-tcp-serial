@@ -33,6 +33,7 @@ exports.mesh = function(mesh, cbExt)
     });
   })
 
+  console.log("tcp-serial listen", args.tcpSerial || 4443)
   tp.server.listen(args.tcpSerial || 4443)
 
   // return our current addressible paths

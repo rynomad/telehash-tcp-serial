@@ -31,4 +31,4 @@ const scan = module.exports = (args) => {
   } 
 
   setTimeout(() => scan(args), 5000)
-}
+} 
