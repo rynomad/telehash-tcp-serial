@@ -19,8 +19,11 @@ const scan = module.exports = (args) => {
             console.log("serial open")
             var sock = net.connect(args.target)
 
+            sPort.end = () => {}
+            
             sPort.pipe(sock)
             sock.pipe(sPort)
+
           })
   
           sPort.on('error', () => shouldscan = true)

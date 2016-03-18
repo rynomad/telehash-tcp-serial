@@ -2,7 +2,6 @@
 var lob = require('lob-enc');
 var fs = require('fs');
 var crc = require('crc');
-var serialPort = require('serialport');
 var net = require('net')
 
 exports.name = 'tcp-serial';
