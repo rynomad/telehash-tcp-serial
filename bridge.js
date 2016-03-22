@@ -20,7 +20,8 @@ const scan = module.exports = (args) => {
             var sock = net.connect(args.target)
 
             sPort.end = () => {}
-            
+            sock.end = () => {}
+
             sPort.pipe(sock)
             sock.pipe(sPort)
 
